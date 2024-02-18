@@ -795,6 +795,12 @@ section {
    color: #149ddd;
 }
 
+
+.testimonials .testimonial-item.expandable:hover p {
+   max-height: none; /* Remove the max-height on hover to show full content */
+}
+
+
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
   color: #c3e8fa;
