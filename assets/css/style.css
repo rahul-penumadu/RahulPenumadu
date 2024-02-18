@@ -779,27 +779,26 @@ section {
   color: #999;
   margin: 0;
 }
+
+
+
+
 .testimonials .testimonial-item.expandable p {
-   max-height: 150px; /* Set a maximum height to show a limited number of lines */
+   max-height: 100px; /* Set a maximum height to show a limited number of lines */
    overflow: hidden;
    position: relative;
 }
 
-.testimonials .testimonial-item.expandable .read-more {
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   background-color: #fff;
-   padding: 5px;
-   cursor: pointer;
+.testimonials .testimonial-item.expandable .see-more-toggle:checked + .see-more-label + p {
+   max-height: none; /* Remove the max-height when the checkbox is checked to show full content */
+}
+
+.testimonials .testimonial-item.expandable .see-more-label {
+   display: block;
+   text-align: center;
    color: #149ddd;
+   cursor: pointer;
 }
-
-
-.testimonials .testimonial-item.expandable:hover p {
-   max-height: none; /* Remove the max-height on hover to show full content */
-}
-
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
