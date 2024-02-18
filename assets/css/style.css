@@ -779,6 +779,21 @@ section {
   color: #999;
   margin: 0;
 }
+.testimonials .testimonial-item.expandable p {
+   max-height: 150px; /* Set a maximum height to show a limited number of lines */
+   overflow: hidden;
+   position: relative;
+}
+
+.testimonials .testimonial-item.expandable .read-more {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background-color: #fff;
+   padding: 5px;
+   cursor: pointer;
+   color: #149ddd;
+}
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
